@@ -5,13 +5,13 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Requests\MeRequest;
 use Illuminate\Http\Request;
 use App\Repositories\SystemRepository;
-use Douyasi\Cache\DataCache;
+use Bluefire\Cache\DataCache;
 use Gate;
 
 /**
  * 系统配置控制器
  *
- * @author raoyc <raoyc2009@gmail.com>
+ * @author bruce
  */
 class OptionController extends BackController
 {
