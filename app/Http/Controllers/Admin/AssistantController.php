@@ -16,7 +16,7 @@ use Bluefire\Cache\DataCache;
  */
 class AssistantController extends BackController
 {
- 
+
     protected $validatorMessages = [
         'picture.image'   => '文件类型不允许,请上传常规的图片(bmp|gif|jpg|png)文件',
         'picture.max'    => '文件过大,文件大小不得超出5MB',
