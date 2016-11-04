@@ -3,7 +3,7 @@
 namespace App\Loggers;
 
 use Illuminate\Http\Request;
-use App\SystemLog;
+use App\Models\SystemLog;
 
 /**
  * Class SystemLogger
@@ -12,7 +12,7 @@ use App\SystemLog;
  * 操作数据表：system_log
  *
  * @package App\Loggers
- * @author raoyc <raoyc2009@gmail.com>
+ * @author bruce
  */
 class SystemLogger
 {

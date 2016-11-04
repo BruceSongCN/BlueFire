@@ -10,7 +10,7 @@ use Gate;
 /**
  * 角色控制器
  *
- * @author raoyc <raoyc2009@gmail.com>
+ * @author bruce
  */
 class RoleController extends BackController
 {

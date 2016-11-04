@@ -5,7 +5,7 @@ namespace App\Interfaces;
 /**
  * 定义数据层接口[主要为只读数据]
  *
- * @author raoyc<raoyc2009@gmail.com>
+ * @author bruce
  */
 Interface IData
 {

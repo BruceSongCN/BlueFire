@@ -7,7 +7,7 @@ namespace App\Interfaces;
  * 需特别说明下，为了快捷开发权限认证类，跟 会员/(管理员)用户认证、 权限与角色 相关的 操作采用 Eloquent ORM 模型来实现，其它的可读写数据直接采用查询构造器(Query Builder)方法来实现
  * 
  *
- * @author raoyc<raoyc2009@gmail.com>
+ * @author bruce
  */
 interface IRepository
 {

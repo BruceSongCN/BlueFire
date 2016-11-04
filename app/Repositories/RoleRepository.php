@@ -2,14 +2,14 @@
 
 namespace App\Repositories;
 
-use App\Role;
-use App\Permission;
+use App\Models\Role;
+use App\Models\Permission;
 
 /**
  * 角色权限仓库RolePermissionRepository
  * 主 Model 为 Role
  *
- * @author raoyc<raoyc2009@gmail.com>
+ * @author bruce
  */
 class RoleRepository extends BaseRepository
 {
@@ -17,15 +17,15 @@ class RoleRepository extends BaseRepository
     /**
      * The Permission instance.
      *
-     * @var App\Permission
+     * @var App\Models\Permission
      */
     protected $permission;
 
     /**
      * Create a new RolePermissionRepository instance.
      *
-     * @param  App\Role $role
-     * @param  App\Permission $permission
+     * @param  App\Models\Role $role
+     * @param  App\Models\Permission $permission
      * @return void
      */
     public function __construct(
@@ -78,9 +78,9 @@ class RoleRepository extends BaseRepository
     /**
      * 创建或更新Role
      *
-     * @param  App\Role $role
+     * @param  App\Models\Role $role
      * @param  array $inputs
-     * @return App\Role
+     * @return App\Models\Role
      */
     private function saveRole($role, $inputs)
     {
@@ -126,7 +126,7 @@ class RoleRepository extends BaseRepository
      *
      * @param  array $inputs
      * @param  string|array $extra
-     * @return App\Role
+     * @return App\Models\Role
      */
     public function store($inputs, $extra = '')
     {
@@ -140,7 +140,7 @@ class RoleRepository extends BaseRepository
      *
      * @param  int $id
      * @param  string|array $extra
-     * @return App\Role
+     * @return App\Models\Role
      */
     public function edit($id, $extra = '')
     {

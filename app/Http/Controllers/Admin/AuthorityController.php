@@ -11,7 +11,7 @@ use App\Events\UserLogout;
 /**
  * 后台管理员用户登录统一认证
  *
- * @author raoyc <raoyc2009@gmail.com>
+ * @author bruce
  */
 class AuthorityController extends BackController
 {

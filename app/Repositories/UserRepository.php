@@ -2,13 +2,13 @@
 
 namespace App\Repositories;
 
-use App\User;
-use App\Role;
+use App\Models\User;
+use App\Models\Role;
 
 /**
  * 用户仓库UserRepository
  *
- * @author raoyc<raoyc2009@gmail.com>
+ * @author bruce
  */
 class UserRepository extends BaseRepository
 {

@@ -2,14 +2,14 @@
 
 namespace App\Repositories;
 
-use App\SystemOption;
-use App\SystemLog;
+use App\Models\SystemOption;
+use App\Models\SystemLog;
 
 /**
  * 系统相关仓库SystemRepository
  * [包括对系统配置与系统日志模型操作]
  *
- * @author raoyc<raoyc2009@gmail.com>
+ * @author bruce
  */
 class SystemRepository extends BaseRepository
 {

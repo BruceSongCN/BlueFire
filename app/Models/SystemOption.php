@@ -1,15 +1,13 @@
 <?php
 
-namespace App;
-
-use Illuminate\Database\Eloquent\Model;
+namespace App\Models;
 
 /**
  * 系统配置模型
  *
- * @author raoyc <raoyc2009@gmail.com>
+ * @author bruce
  */
-class SystemOption extends Model
+class SystemOption extends BaseModel
 {
 
     protected $table = 'system_options';

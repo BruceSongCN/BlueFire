@@ -14,9 +14,9 @@ function app_version() {
  * Get YASMF version
  * @return string
  */
-function yascmf_version() {
+function system_version() {
     $app = app();
-    return "YASCMF/BASE v5.2";
+    return "BluefireCMS v1.0";
 }
 
 if (!function_exists('cdn')) {

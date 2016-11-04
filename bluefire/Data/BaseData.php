@@ -26,7 +26,7 @@ abstract class BaseData implements IData
      * Get Model by id.
      *
      * @param  int $id
-     * @return App\Model|Douyasi\Models\Model
+     * @return App\Models\Model|bluefire\Models\Model
      */
     public function getById($id)
     {

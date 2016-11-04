@@ -5,9 +5,9 @@ namespace App\Http\Middleware;
 use Closure;
 
 /**
- * 芽丝CMF后台管理 权限不足抛出异常响应 中间件
+ * 后台管理 权限不足抛出异常响应 中间件
  *
- * @author raoyc <raoyc2009@gmail.com>
+ * @author bruce
  */
 class PermissionDenied
 {

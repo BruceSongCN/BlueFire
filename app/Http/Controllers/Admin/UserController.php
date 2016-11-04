@@ -12,7 +12,7 @@ use Gate;
 /**
  * 管理员(用户)资源控制器
  *
- * @author raoyc <raoyc2009@gmail.com>
+ * @author bruce
  */
 class UserController extends BackController
 {

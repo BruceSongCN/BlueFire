@@ -1,15 +1,13 @@
 <?php
 
-namespace App;
-
-use Illuminate\Database\Eloquent\Model;
+namespace App\Models;
 
 /**
  * 系统日志模型
  *
- * @author raoyc <raoyc2009@gmail.com>
+ * @author bruce
  */
-class SystemLog extends Model
+class SystemLog extends BaseModel
 {
 
     protected $table = 'system_logs';
@@ -24,6 +22,6 @@ class SystemLog extends Model
      */
     public function user()
     {
-        return $this->belongsTo('App\User', 'user_id', 'id');
+        return $this->belongsTo('App\Models\User', 'user_id', 'id');
     }
 }

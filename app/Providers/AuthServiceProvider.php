@@ -4,7 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Contracts\Auth\Access\Gate as GateContract;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
-use App\Permission;
+use App\Models\Permission;
 
 class AuthServiceProvider extends ServiceProvider
 {

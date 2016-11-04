@@ -4,8 +4,8 @@ namespace Bluefire\Cache;
 
 use Cache;
 use DB;
-use App\SystemOption;
-use App\Permission;
+use App\Models\SystemOption;
+use App\Models\Permission;
 
 /**
  * Class DataCache
@@ -65,11 +65,11 @@ class DataCache
         $permissions = Permission::all();
 
         if (config('cache.default') === 'memcached') {
-            Cache::tags('system', 'permissions')->forever('yascmf_permissions', $permissions);  //系统静态配置很少会发生改变，因此建议永久储存该缓存
+            Cache::tags('system', 'permissions')->forever('system_permissions', $permissions);  //系统静态配置很少会发生改变，因此建议永久储存该缓存
         } else {
-            Cache::forever('yascmf_permissions', $permissions);
+            Cache::forever('system_permissions', $permissions);
             /*
-            Cache::remember('yascmf_permissions', 120, function () use ($permissions) {
+            Cache::remember('system_permissions', 120, function () use ($permissions) {
                 return $permissions;
             }
             */
@@ -82,7 +82,7 @@ class DataCache
         if (config('cache.default') === 'memcached') {
             Cache::tags('permissions')->flush();
         }
-        Cache::forget('yascmf_permissions');
+        Cache::forget('system_permissions');
     }
 
 }

@@ -9,7 +9,7 @@ use Gate;
 /**
  * 权限控制器
  *
- * @author raoyc <raoyc2009@gmail.com>
+ * @author bruce
  */
 class PermissionController extends BackController
 {

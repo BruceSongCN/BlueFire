@@ -6,13 +6,13 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Validator;
 use App\Events\UserUpload;
-use Douyasi\Cache\DataCache;
+use bluefire\Cache\DataCache;
 
 
 /**
  * 开发演示控制器
  *
- * @author raoyc <raoyc2009@gmail.com>
+ * @author bruce
  */
 class DemoController extends BackController
 {
