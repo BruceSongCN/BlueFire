@@ -94,6 +94,7 @@ class RoleRepository extends BaseRepository
             if (array_key_exists('permissions', $inputs)) {
                 $permissions = $inputs['permissions'];  //这里提交的为数组
                 if (is_array($permissions) && $permissions) {
+                    var_dump($role->perms());exit;
                     $role->perms()->sync($permissions);  //同步角色权限
                 }
             } else {

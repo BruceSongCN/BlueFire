@@ -59,7 +59,7 @@ class UserRepository extends BaseRepository
     /**
      * 更新管理型用户
      *
-     * @param  App\User $manager
+     * @param  App\Models\User $manager
      * @param  array $inputs
      * @return void
      */
